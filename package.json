@@ -1,0 +1,25 @@
+{
+  "name": "huddle-landing-page-with-curved-sections",
+  "private": true,
+  "version": "1.0.0",
+  "description": "This is a solution to the Huddle landing page with curved sections challenge on Frontend Mentor",
+  "author": "Csaba Molnar (DocForLoop)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "sass": "^1.86.0",
+    "vite": "^6.2.0"
+  }
+}
