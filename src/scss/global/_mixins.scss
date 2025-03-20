@@ -1,1 +1,10 @@
 @use './functions' as *;
+
+@mixin btn-accent {
+    padding-block: fluid(11, 25, 375, 1440);
+    padding-inline: fluid(40, 100, 375, 1440);
+    border-radius: rem(20);
+    color: var(--clr-light);
+    background-color: var(--clr-secondary);
+    font-weight: var(--fw-2);
+}

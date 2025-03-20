@@ -1,1 +1,55 @@
 @use './functions' as *;
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/open-sans-v40-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/open-sans-v40-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/poppins-v22-latin-700.woff2') format('woff2');
+  }
+
+:root {
+    --ff-primary: "Open Sans", Arial, sans-serif;
+    --ff-secondary: "Poppins", "Segoe UI", Arial, sans-serif;
+    --fs-h1: #{fluid(24, 48, 375, 1440, rem)};
+    --fs-header-desc: #{fluid(14, 20, 375, 1440, rem)};
+    --fs-stat-title: #{fluid(61, 96, 375, 1440, rem)};
+    --fs-stat-desc: #{fluid(15, 24, 375, 1440, rem)};
+    --fs-h2: #{fluid(20, 40, 375, 1440, rem)};
+    --fs-h2-alt: #{fluid(24, 40, 375, 1440, rem)};
+    --fs-body-text: #{fluid(14, 16, 375, 1440, rem)};
+    --fs-btn: #{fluid(9.41, 16, 375, 1440, rem)};
+    --fs-btn-accent: #{fluid(12, 20, 375, 1440, rem)};
+    --fs-footer-text: #{rem(14)};
+    --fs-newsletter: #{fluid(20, 24, 375, 1440, rem)};
+    --fs-footer-btn: #{rem(16)};
+    --fw-1: 400;
+    --fw-2: 600;
+    --fw-3: 700;
+    --lh-body: 1.5;
+    --lh-footer: 1.7;
+}
