@@ -1,2 +1,124 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.grow {
+    margin-block-start: 20px;
+
+    &__decor-top {
+        inline-size: 100%;
+        block-size: 100%;
+    }
+
+    &__decor-bottom {
+        inline-size: 100%;
+        block-size: 100%;
+    }
+
+    &__section {
+        background-color: var(--clr-section-bg);
+        padding-block-start: 70px;
+        padding-block-end: 58px;
+    }
+
+    &__img {
+        inline-size: calc(100% - rem(95));
+        aspect-ratio: 280/280;
+        background-image: url(../assets/images/illustration-grow-together.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        max-inline-size: rem(560);
+    }
+
+    &__content {
+        text-align: center;
+        margin-inline: 27px;
+    }
+
+    &__title {
+        font-size: var(--fs-h2);
+    }
+
+    &__desc {
+        max-inline-size: 58ch;
+    }
+}
+
+.flowing {
+    margin-block-start: 98px;
+
+    &__img {
+        inline-size: calc(100% - rem(95));
+        aspect-ratio: 280/280;
+        background-image: url(../assets/images/illustration-flowing-conversation.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        max-inline-size: rem(560);
+    }
+
+    &__content {
+        text-align: center;
+        margin-inline: 27px;
+    }
+
+    &__title {
+        font-size: var(--fs-h2);
+    }
+
+    &__desc {
+        max-inline-size: 59ch;
+    }
+}
+
+.users {
+    margin-block-start: 120px;
+    
+    &__decor-top {
+        inline-size: 100%;
+        block-size: 100%;
+    }
+
+    &__decor-bottom {
+        inline-size: 100%;
+        block-size: 100%;
+    }
+
+    &__section {
+        background-color: var(--clr-section-bg);
+        padding-block-end: 88px;
+    }
+
+    &__img {
+        inline-size: calc(100% - rem(95));
+        aspect-ratio: 280/280;
+        background-image: url(../assets/images/illustration-your-users.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        max-inline-size: rem(560);
+    }
+
+    &__content {
+        text-align: center;
+        margin-inline: 27px;
+    }
+
+    &__title {
+        font-size: var(--fs-h2);
+    }
+
+    &__desc {
+        max-inline-size: 58ch;
+    }
+}
+
+.ready {
+    margin-block-start: 68px;
+    margin-block-end: 251px;
+    text-align: center;
+
+    &__title {
+        font-size: var(--fs-h2-alt);
+    }
+}

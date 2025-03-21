@@ -63,16 +63,30 @@
       </header>
 
       <main class="main" id="main-content" tabindex="-1">
-        <section class="grow" aria-labelledby="grow-together">
-          <div class="grow__img"></div>
+        <div class="grow">
+          <picture>
+            <source media="(width > 75em)" srcset="./src/assets/images/bg-section-top-desktop-1.svg">
+            <img class="grow__decor-top" src="./src/assets/images/bg-section-top-mobile-1.svg" 
+                  alt="" width="375" height="112" loading="lazy" decoding="async">
+          </picture>
 
-          <div class="grow__content">
-            <h2 class="grow__title" id="grow-together">Grow Together</h2>
-            <p class="grow__desc">Generate meaningful discussions with your audience and build a strong, loyal community. 
-              Think of the insightful conversations you miss out on with a feedback form.
-            </p>
-          </div>
-        </section>
+          <section class="grow__section" aria-labelledby="grow-together">
+            <div class="grow__img"></div>
+
+            <div class="grow__content">
+              <h2 class="grow__title" id="grow-together">Grow Together</h2>
+              <p class="grow__desc">Generate meaningful discussions with your audience and build a strong, loyal community. 
+                Think of the insightful conversations you miss out on with a feedback form.
+              </p>
+            </div>
+          </section>
+
+          <picture>
+            <source media="(width > 75em)" srcset="./src/assets/images/bg-section-bottom-desktop-1.svg">
+            <img class="grow__decor-bottom" src="./src/assets/images/bg-section-bottom-mobile-1.svg" 
+                alt="" width="375" height="52" loading="lazy" decoding="async">
+          </picture>
+        </div>
 
         <section class="flowing" aria-labelledby="flowing">
           <div class="flowing__img"></div>
@@ -85,16 +99,30 @@
           </div>
         </section>
 
-        <section class="users" aria-labelledby="users">
-          <div class="users__img"></div>
+        <div class="users">
+          <picture>
+            <source media="(width > 75em)" srcset="./src/assets/images/bg-section-top-desktop-2.svg">
+            <img class="users__decor-top" src="./src/assets/images/bg-section-top-mobile-2.svg" 
+                  alt="" width="375" height="103" loading="lazy" decoding="async">
+          </picture>     
 
-          <div class="users__content">
-            <h2 class="users__title" id="users">Your Users</h2>
-            <p class="users__desc">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-              once signed in to your app, your users can start chatting immediately.
-            </p>
-          </div>
-        </section>
+          <section class="users__section" aria-labelledby="users">
+            <div class="users__img"></div>
+
+            <div class="users__content">
+              <h2 class="users__title" id="users">Your Users</h2>
+              <p class="users__desc">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+                once signed in to your app, your users can start chatting immediately.
+              </p>
+            </div>
+          </section>
+
+          <picture>
+            <source media="(width > 75em)" srcset="./src/assets/images/bg-section-bottom-desktop-2.svg">
+            <img class="users__decor-bottom" src="/src/assets/images/bg-section-bottom-mobile-2.svg" 
+                  alt="" width="375" height="101" loading="lazy" decoding="async">
+          </picture>
+        </div>
 
         <section class="ready">
           <h2 class="ready__title">Ready To Build Your Community?</h2>
