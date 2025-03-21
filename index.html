@@ -21,147 +21,148 @@
 
     <script type="module" src="src/main.js" defer></script>
   </head>
-  <body>
-    <div>
-      <header>
-        <a href="#main-content">Skip to main content</a>
-        <div>
-          <a href="#">
-            <img src="./src/assets/images/logo.svg" alt="Home of Huddle" width="96" height="16">
+  <body class="body">
+    <div class="page-wrapper">
+      <header class="header">
+        <a class="header__skip-link" href="#main-content">Skip to main content</a>
+        <div class="header__nav">
+          <a class="header__logo-link" href="#">
+            <img class="header__logo" src="./src/assets/images/logo.svg" 
+                  alt="Home of Huddle" width="96" height="16">
           </a>
-          <a href="#">Try it free</a>
+          <a class="header__cta-btn" href="#">Try it free</a>
         </div>
 
-        <section aria-labelledby="header-title">
-          <div>
-            <h1 id="header-title">Build The Community Your Fans Will Love</h1>
-            <p>Huddle re-imagines the way we build communities. You have a voice, but so does 
+        <section class="hero" aria-labelledby="header-title">
+          <div class="hero__content">
+            <h1 class="hero__title" id="header-title">Build The Community Your Fans Will Love</h1>
+            <p class="hero__desc">Huddle re-imagines the way we build communities. You have a voice, but so does 
               your audience. Create connections with your users as you engage in genuine discussion.
             </p>
-            <a href="#">Get Started For Free</a>
+            <a class="btn-primary" href="#">Get Started For Free</a>
           </div>
 
-          <div></div>
+          <div class="hero__img"></div>
         </section>
 
-        <section aria-label="Huddle's statistics">
-          <div>
-            <img src="./src/assets/images/icon-communities.svg" 
+        <section class="stats" aria-label="Huddle's statistics">
+          <div class="stats__item">
+            <img class="stats__icon-comm" src="./src/assets/images/icon-communities.svg" 
                   alt="" width="29" height="26" loading="lazy" decoding="async">
-            <p>1.4k+</p>
-            <p>Communities Formed</p>
+            <p class="stats__number">1.4k+</p>
+            <p class="stats__text">Communities Formed</p>
           </div>
 
-          <div>
-            <img src="./src/assets/images/icon-messages.svg" 
-                  alt="" width="25" height="25" loading="lazy" decoding="async">
-            <p>2.7m+</p>
-            <p>Messages Sent</p>
+          <div class="stats__item">
+            <img class="stats__icon-msg" src="./src/assets/images/icon-messages.svg" 
+                  alt="" width="30" height="25" loading="lazy" decoding="async">
+            <p class="stats__number">2.7m+</p>
+            <p class="stats__text stats__text--center">Messages Sent</p>
           </div>
         </section>
       </header>
 
-      <main id="main-content" tabindex="-1">
-        <section aria-labelledby="grow-together">
-          <div></div>
+      <main class="main" id="main-content" tabindex="-1">
+        <section class="grow" aria-labelledby="grow-together">
+          <div class="grow__img"></div>
 
-          <div>
-            <h2 id="grow-together">Grow Together</h2>
-            <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+          <div class="grow__content">
+            <h2 class="grow__title" id="grow-together">Grow Together</h2>
+            <p class="grow__desc">Generate meaningful discussions with your audience and build a strong, loyal community. 
               Think of the insightful conversations you miss out on with a feedback form.
             </p>
           </div>
         </section>
 
-        <section aria-labelledby="flowing">
-          <div></div>
+        <section class="flowing" aria-labelledby="flowing">
+          <div class="flowing__img"></div>
 
-          <div>
-            <h2 id="flowing">Flowing Conversations</h2>
-            <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+          <div class="flowing__content">
+            <h2 class="flowing__title" id="flowing">Flowing Conversations</h2>
+            <p class="flowing__desc">You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
               just-in-time loading for a more natural flow.
             </p>
           </div>
         </section>
 
-        <section aria-labelledby="users">
-          <div></div>
+        <section class="users" aria-labelledby="users">
+          <div class="users__img"></div>
 
-          <div>
-            <h2 id="users">Your Users</h2>
-            <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+          <div class="users__content">
+            <h2 class="users__title" id="users">Your Users</h2>
+            <p class="users__desc">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
               once signed in to your app, your users can start chatting immediately.
             </p>
           </div>
         </section>
 
-        <section>
-          <h2>Ready To Build Your Community?</h2>
-          <a href="#">Get Started For Free</a>
+        <section class="ready">
+          <h2 class="ready__title">Ready To Build Your Community?</h2>
+          <a class="btn-primary" href="#">Get Started For Free</a>
         </section>
       </main>
 
-      <footer>
-        <section aria-labelledby="newsletter">
-          <div>
-            <h3 id="newsletter">Newsletter</h3>
-            <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+      <footer class="footer">
+        <section class="newsletter" aria-labelledby="newsletter">
+          <div class="newsletter__content">
+            <h3 class="newsletter__title" id="newsletter">Newsletter</h3>
+            <p class="newsletter__desc">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
               send you spam or pass on your email address
             </p>
           </div>
 
-          <form id="form" novalidate>
-            <div>
-              <label for="email">Email address</label>
-              <input type="email" id="email" name="email" autocomplete="email" 
+          <form class="newsletter__form" id="form" novalidate>
+            <div class="newsletter__input-group">
+              <label class="newsletter__label" for="email">Email address</label>
+              <input class="newsletter__email-input" type="email" id="email" name="email" autocomplete="email" 
                       placeholder="example@email.com" aria-describedby="email-error">
-              <span id="email-error" role="alert"></span>
+              <span class="newsletter__error" id="email-error" role="alert"></span>
             </div>
 
-            <input type="submit" value="Subscribe">
+            <input class="newsletter__btn" type="submit" value="Subscribe">
           </form>
         </section>
 
-        <dialog aria-labelledby="modal-title" aria-describedby="modal-desc">
-          <img src="./src/assets/images/icon-success.svg" alt="" width="64" height="64">
-          <h2 id="modal-title">Thanks for subscribing!</h2>
-          <p id="modal-desc" role="alert">A confirmation email has been sent to <span></span>. 
+        <dialog class="modal" aria-labelledby="modal-title" aria-describedby="modal-desc">
+          <img class="modal__icon" src="./src/assets/images/icon-success.svg" alt="" width="64" height="64">
+          <h2 class="modal__title" id="modal-title">Thanks for subscribing!</h2>
+          <p class="modal__msg" id="modal-desc" role="alert">A confirmation email has been sent to <span class="modal__email"></span>. 
             Please open it and click the button inside to confirm your subscription.
           </p>
-          <button>Dismiss message</button>
+          <button class="modal__btn">Dismiss message</button>
         </dialog>
 
-        <div>
+        <div class="footer__content">
           <a href="#">
-            <img src="./src/assets/images/logo-white.svg" 
+            <img class="footer__logo" src="./src/assets/images/logo-white.svg" 
                   alt="Home of Huddle" width="200" height="32" loading="lazy" decoding="async">
           </a>
 
-          <section aria-label="Contact information">
-            <address>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          <section class="footer__contact-wrapper" aria-label="Contact information">
+            <address class="footer__address">
+              <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
                 vestibulum a, ultrices quis sem.
               </p>
 
-              <div>
-                <img src="./src/assets/images/icon-phone.svg" 
+              <div class="footer__contact">
+                <img class="footer__icons" src="./src/assets/images/icon-phone.svg" 
                       alt="" width="24" height="24" loading="lazy" decoding="async">
-                <a href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a>
+                <a class="footer__links" href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a>
               </div>
 
-              <div>
-                <img src="./src/assets/images/icon-email.svg" 
+              <div class="footer__contact">
+                <img class="footer__icons" src="./src/assets/images/icon-email.svg" 
                       alt="" width="24" height="24" loading="lazy" decoding="async">
-                <a href="mailto:example@huddle.com">example@huddle.com</a>
+                <a class="footer__links" href="mailto:example@huddle.com">example@huddle.com</a>
               </div>
             </address>
           </section>
 
-          <nav>
-            <ul>
+          <nav class="footer__social-nav" aria-label="Social media links">
+            <ul class="footer__social-list">
               <li>
-                <a href="https://www.facebook.com" aria-label="Huddle on Facebook">
-                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 
+                <a class="footer__social-links" href="https://www.facebook.com" aria-label="Huddle on Facebook">
+                  <svg class="footer__social-icons" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 
                     1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 
                     1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 
                     1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 
@@ -170,8 +171,8 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com" aria-label="Huddle on Instagram">
-                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 
+                <a class="footer__social-links" href="https://www.instagram.com" aria-label="Huddle on Instagram">
+                  <svg class="footer__social-icons" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 
                     1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 
                     3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 
                     0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 
@@ -184,8 +185,8 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.twitter.com" aria-label="Huddle on Twitter">
-                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                <a class="footer__social-links" href="https://www.twitter.com" aria-label="Huddle on Twitter">
+                  <svg class="footer__social-icons" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M23.643 4.937a9.867 9.867 0 01-2.828.775 4.932 4.932 0 002.165-2.723 9.864 9.864 0 
                     01-3.127 1.195 4.916 4.916 0 00-8.384 4.482A13.978 13.978 0 012.4 3.016a4.93 4.93 0 001.523 
                     6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 

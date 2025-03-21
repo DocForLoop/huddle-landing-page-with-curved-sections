@@ -3,8 +3,20 @@
 @mixin btn-accent {
     padding-block: fluid(11, 25, 375, 1440);
     padding-inline: fluid(40, 100, 375, 1440);
-    border-radius: rem(20);
+    border-radius: rem(32);
     color: var(--clr-light);
     background-color: var(--clr-secondary);
     font-weight: var(--fw-2);
+    min-inline-size: max-content;
+    box-shadow: 0 rem(3) rem(7) 0 var(--clr-btn-accent-shadow);
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+    
+    &:focus-visible {
+        outline: rem(3) solid var(--clr-secondary);
+        outline-offset: rem(2);
+    }
 }

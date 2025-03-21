@@ -1,1 +1,38 @@
 @use '@scss/global/functions' as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+    
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 104px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 24px;
+    }
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    row-gap: 88px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+}
