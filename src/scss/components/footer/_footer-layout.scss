@@ -1,1 +1,66 @@
 @use '@scss/global/functions' as *;
+
+.footer {
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 104px;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    &__contact-info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    &__social-list {
+        display: flex;
+        column-gap: 17px;
+
+    }
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(32, 40, 375, 1440);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(20);
+    }
+
+    &__input-group {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2px;
+
+    }
+}

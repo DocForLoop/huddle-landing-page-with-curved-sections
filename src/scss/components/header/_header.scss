@@ -5,6 +5,11 @@
     min-block-size: 100vh;
 }
 
+.page-wrapper {
+    inline-size: 100%;
+    max-inline-size: rem(2150);
+}
+
 .header {
     padding-block-start: fluid(24, 78, 375, 1440);
     padding-inline: fluid(24, 72, 375, 1440);
