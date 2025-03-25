@@ -16,7 +16,7 @@
         background-color: var(--clr-primary);
         padding-block-start: 56px;
         padding-inline: 28px;
-        padding-block-end: 46px;
+        padding-block-end: fluid(46, 103, 375, 1440);
     }
 
     &__logo-link {
@@ -82,8 +82,8 @@
     }
 
     &__social-icons {
-        inline-size: rem(24);
-        block-size: rem(24);
+        inline-size: fluid(24, 32, 375, 1440, rem);
+        block-size: fluid(24, 32, 375, 1440, rem);
     }
 }
 
@@ -164,6 +164,43 @@
 }
 
 .modal {
-    padding: 32px;
+    padding-inline: 28px;
+    padding-block: 140px;
     text-align: center;
+    border: none;
+    min-inline-size: 100%;
+    min-block-size: 100%;
+    z-index: 1000;
+    color: var(--clr-light);
+    background-color: var(--clr-primary);
+
+    &__icon {
+        inline-size: rem(64);
+        block-size: rem(64);
+    }
+
+    &__title {
+        font-size: var(--fs-modal-title);
+        line-height: var(--lh-body);
+    }
+
+    &__msg {
+        max-inline-size: 36ch;
+        font-size: var(--fs-modal-desc);
+    }
+
+    &__email {
+        font-weight: var(--fw-3);
+        color: var(--clr-tertiary);
+    }
+
+    &__btn {
+        margin-block-start: 24px;
+        border: none;
+        @include m.btn-accent;
+        padding-block: 12px;
+        padding-inline: 41px;
+        border-radius: rem(12);
+        font-size: var(--fs-footer-btn)
+    }
 }
