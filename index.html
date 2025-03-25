@@ -140,7 +140,7 @@
         <div class="footer__content-wrapper">
           <section class="newsletter" aria-labelledby="newsletter">
             <div class="newsletter__content">
-              <h3 class="newsletter__title" id="newsletter">Newsletter</h3>
+              <h3 class="newsletter__title" id="newsletter" tabindex="-1">Newsletter</h3>
               <p class="newsletter__desc">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
                 send you spam or pass on your email address
               </p>
@@ -159,12 +159,14 @@
           </section>
 
           <dialog class="modal" aria-labelledby="modal-title" aria-describedby="modal-desc">
-            <img class="modal__icon" src="/src/assets/images/icon-success.svg" alt="" width="64" height="64">
-            <h2 class="modal__title" id="modal-title">Thanks for subscribing!</h2>
-            <p class="modal__msg" id="modal-desc" role="alert">A confirmation email has been sent to <span class="modal__email"></span>. 
-              Please open it and click the button inside to confirm your subscription.
-            </p>
-            <button class="modal__btn">Dismiss message</button>
+            <div class="modal__content">
+              <img class="modal__icon" src="/src/assets/images/icon-success.svg" alt="" width="64" height="64">
+              <h2 class="modal__title" id="modal-title">Thanks for subscribing!</h2>
+              <p class="modal__msg" id="modal-desc" role="alert">A confirmation email has been sent to <span class="modal__email"></span>. 
+                Please open it and click the button inside to confirm your subscription.
+              </p>
+              <button class="modal__btn">Dismiss message</button>
+            </div>
           </dialog>
 
           <div class="footer__content">

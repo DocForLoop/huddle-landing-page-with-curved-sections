@@ -133,7 +133,7 @@
     &__error {
         position: absolute;
         inset-block-end: 0;
-        transform: translateY(rem(22));
+        transform: translateY(rem(24));
         color: var(--clr-error);
         font-size: var(--fs-error);
         font-weight: var(--fw-2);
@@ -161,4 +161,9 @@
             outline-offset: rem(3);
         }
     }
+}
+
+.modal {
+    padding: 32px;
+    text-align: center;
 }
