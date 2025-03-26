@@ -188,13 +188,13 @@
     }
 
     &__msg {
-        max-inline-size: 36ch;
+        max-inline-size: 39ch;
         font-size: var(--fs-modal-desc);
     }
 
     &__email {
         font-weight: var(--fw-3);
-        color: var(--clr-tertiary);
+        color: var(--clr-modal-email);
     }
 
     &__btn {

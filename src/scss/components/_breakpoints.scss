@@ -1,7 +1,31 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
 
+@media (width > em(768)) {
+
+    .modal {
+        min-inline-size: unset;
+        min-block-size: unset;
+        inline-size: fluid(500, 670, 768, 1440, rem);
+        block-size: fluid(470, 535, 768, 1440, rem);
+        padding-block: fluid(28, 40, 768, 1440);
+        border-radius: rem(36);
+        border: rem(5) solid var(--clr-light);
+        position: fixed;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
+        transform: translate(-50%, -50%);
+
+        &::backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+            z-index: 999;
+        }
+    }
+}
+
 @media (width > em(1200)) {
+    
     .stats {
         flex-direction: row;
         column-gap: fluid(150, 341, 1201, 1440);

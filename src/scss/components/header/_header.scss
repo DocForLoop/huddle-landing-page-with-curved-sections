@@ -13,6 +13,7 @@
 .header {
     padding-block-start: fluid(24, 78, 375, 1440);
     padding-inline: fluid(24, 72, 375, 1440);
+
     &__skip-link {
         position: absolute;
         inset-inline-start: rem(-100);
@@ -69,7 +70,7 @@
 
         &:focus-visible {
             outline: rem(3) solid var(--clr-secondary);
-            outline-offset: rem(2);
+            outline-offset: rem(3);
         }
     }
 }

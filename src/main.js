@@ -53,6 +53,7 @@ const closeModal = () => {
     modal.close();
     modalEmail.textContent = '';
     emailInput.value = '';
+    removeError();
 
     const signUpTitle = document.querySelector('.newsletter__title');
 
