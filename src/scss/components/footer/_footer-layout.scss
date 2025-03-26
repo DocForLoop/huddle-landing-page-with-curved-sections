@@ -43,7 +43,7 @@
 .newsletter {
     display: flex;
     flex-direction: column;
-    row-gap: fluid(32, 40, 375, 1440);
+    row-gap: fluid(10, 20, 375, 1440);
 
     &__content {
         display: flex;

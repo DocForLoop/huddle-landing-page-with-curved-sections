@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 104px;
+    row-gap: fluid(104, 120, 375, 1440);
 
     &__content {
         display: flex;

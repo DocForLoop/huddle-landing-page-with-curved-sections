@@ -1,2 +1,110 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+@media (width > em(1200)) {
+    .stats {
+        flex-direction: row;
+        column-gap: fluid(150, 341, 1201, 1440);
+    }
+
+    .grow {
+        margin-block-start: 133px;
+
+        &__decor-top {
+            max-block-size: rem(135);
+        }
+
+        &__decor-bottom {
+            max-block-size: rem(125);
+        }
+
+        &__section {
+            flex-direction: row-reverse;
+            justify-content: center;
+            column-gap: 100px;
+            padding-block: 0;
+            padding-inline: 61px;
+        }
+
+        &__content {
+            text-align: start;
+            margin-inline: 0;
+        }
+    }
+
+    .flowing {
+        margin-block-start: 103px;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 120px;
+        padding-inline: 61px;
+
+        &__content {
+            text-align: start;
+            margin-inline: 0;
+        }
+    }
+
+    .users {
+        margin-block-start: 20px;
+
+        &__decor-top {
+            max-block-size: rem(144);
+        }
+    
+        &__decor-bottom {
+            max-block-size: rem(125);
+        }
+
+        &__section {
+            flex-direction: row-reverse;
+            justify-content: center;
+            column-gap: 120px;
+            padding-inline: 61px;
+            padding-block-end: 0;
+        }
+
+        &__content {
+            text-align: start;
+            margin-inline: 0;
+        }
+    }
+
+    .ready {
+        margin-block-start: 135px;
+        margin-block-end: 178px;
+        row-gap: 42px;
+    }
+
+    .newsletter {
+
+        &__input-group {
+            min-inline-size: rem(320);
+        }
+
+        &__form {
+            flex-direction: row;
+            align-items: center;
+            column-gap: 40px;
+        }
+    }
+
+    .footer {
+
+        &__content-wrapper {
+            padding-block-start: 120px;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: stretch;
+            column-gap: fluid(100, 340, 1201, 1440);
+        }
+
+        &__content {
+            row-gap: 24px;
+        }
+
+        &__address {
+            row-gap: 24px;
+        }
+    }
+}

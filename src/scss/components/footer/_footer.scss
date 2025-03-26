@@ -35,7 +35,7 @@
     }
 
     &__contact-wrapper {
-        margin-block-end: fluid(32, 64, 375, 1440);
+        margin-block-end: fluid(32, 56, 375, 1440);
     }
 
     &__desc {
@@ -57,6 +57,9 @@
     &__links {
         color: var(--clr-light);
         font-style: normal;
+        font-size: var(--fs-body-text);
+        line-height: var(--lh-body);
+
         border-radius: rem(3);
 
         &:focus-visible {
