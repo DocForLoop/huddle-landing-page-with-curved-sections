@@ -20,8 +20,8 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/)
-- [Live Site](https://)
+- [Solution](https://www.frontendmentor.io/solutions/huddle-landing-page-with-curved-sections-with-js-custom-validation-jgdz7hsPRq)
+- [Live Site](https://huddle-landing-page-with-curved-sections-nu.vercel.app/)
 
 ## My process
 
